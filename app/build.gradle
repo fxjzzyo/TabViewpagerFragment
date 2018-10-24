@@ -29,4 +29,5 @@ dependencies {
         force = true
     }
     implementation 'com.android.support:design:26.1.0'
+    compile 'com.baoyz.pullrefreshlayout:library:1.2.0'
 }
