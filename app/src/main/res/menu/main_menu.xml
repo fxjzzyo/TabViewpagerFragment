@@ -8,6 +8,11 @@
         android:title=""
         app:showAsAction="always"></item>
     <item
+        android:id="@+id/menu_set"
+        android:icon="@mipmap/search_white_16"
+        android:title="设置"
+        app:showAsAction="never"></item>
+    <item
         android:id="@+id/menu_about"
         android:title="关于"
         app:showAsAction="never"></item>

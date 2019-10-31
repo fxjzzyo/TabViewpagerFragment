@@ -4,6 +4,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.tab.viewpager.bean.Category;
+
 import java.util.List;
 
 /**
@@ -11,12 +13,12 @@ import java.util.List;
  */
 
 public class MyViewpaerAdapter extends FragmentPagerAdapter {
-    private List<String> titleLists;
+    private List<String> titles;
     private List<Fragment> fragments;
 
     public MyViewpaerAdapter(FragmentManager fm, List<String> titleLists, List<Fragment> fragments) {
         super(fm);
-        this.titleLists = titleLists;
+        this.titles = titleLists;
         this.fragments = fragments;
     }
 
@@ -36,6 +38,7 @@ public class MyViewpaerAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        return titleLists.get(position);
+
+        return titles.get(position);
     }
 }
